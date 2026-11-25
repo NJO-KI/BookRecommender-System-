@@ -4,7 +4,7 @@ An end-to-end book recommendation engine built on the **Book-Crossing** dataset 
 
 ---
 
-## 📌 Project Overview & Problem Statement
+##  Project Overview & Problem Statement
 
 * **Target Audience:** Readers seeking personalized book recommendations based on historical explicit ratings ($1-10$ scale).
 * **Core Objective:** Surface Top-$N$ relevant books to active users while balancing ranking precision, catalog coverage, and popularity bias.
@@ -12,7 +12,7 @@ An end-to-end book recommendation engine built on the **Book-Crossing** dataset 
 
 ---
 
-## 📊 Dataset Statistics & Preprocessing
+##  Dataset Statistics & Preprocessing
 
 The primary dataset originates from the **Book-Crossing** explicit rating dump.
 
@@ -32,7 +32,7 @@ The primary dataset originates from the **Book-Crossing** explicit rating dump.
 
 ---
 
-## 🏗️ Model Architecture & Pipeline
+##  Model Architecture & Pipeline
 
 1. **Popularity Baseline:** Ranks books globally by interaction count (`pop_count`) and average score (`avg_rating`).
 2. **Content-Based Filtering:** Vectorizes metadata using TF-IDF (`max_features=5000`, English stop-word removal). Builds user profile vectors weighted by liked books ($\ge 7/10$) and computes Cosine Similarity across unseen candidate items.
@@ -40,7 +40,7 @@ The primary dataset originates from the **Book-Crossing** explicit rating dump.
 
 ---
 
-## 📈 Evaluation & Model Comparison
+##  Evaluation & Model Comparison
 
 Models were evaluated on a per-user held-out test split ($20\%$ test ratio, relevance threshold $\ge 7.0$).
 
@@ -57,7 +57,7 @@ Models were evaluated on a per-user held-out test split ($20\%$ test ratio, rele
 
 ---
 
-## 🚀 Interactive Streamlit Demonstration
+##  Interactive Streamlit Demonstration
 
 A lightweight user-facing prototype is available in `app/app.py`.
 
@@ -78,7 +78,7 @@ streamlit run app/app.py
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 DSA4060XA-Book-Recommender/
