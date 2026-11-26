@@ -84,7 +84,6 @@ streamlit run app/app.py
 DSA4060XA-Book-Recommender/
 ├── README.md                           # Project documentation & summary
 ├── PROJECT_REPORT.pdf                  # Full 10-page final academic report
-├── requirements.txt                    # Dependencies (pandas, scikit-learn, streamlit)
 ├── Book_recommender_system.ipynb       # Complete execution notebook
 ├── app/
 │   └── app.py                          # Streamlit interactive prototype
